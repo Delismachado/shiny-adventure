@@ -1,0 +1,340 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto"
+     versionIRI="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto">
+    <Prefix name="" IRI="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="pt-br">Ontologia que descreve o mundo dos Cubos</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Cor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CorCinza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cubos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MassaOito"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mesa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suporte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#azul"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cinza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#laranja"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vermelho"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estaSobre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temCor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temMassa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#corAzul"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#corCinza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#corLaranja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#corVermelho"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cuboA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cuboB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cuboC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cuboCinza1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cuboCinza2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cuboD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cuboE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mesa1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mesa2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#8kg"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#azul"/>
+        <Class IRI="#Cor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cinza"/>
+        <Class IRI="#Cor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#laranja"/>
+        <Class IRI="#Cor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vermelho"/>
+        <Class IRI="#Cor"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Cubos"/>
+        <Class IRI="#Mesa"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#azul"/>
+        <NamedIndividual IRI="#corAzul"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cinza"/>
+        <NamedIndividual IRI="#corCinza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#laranja"/>
+        <NamedIndividual IRI="#corLaranja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#vermelho"/>
+        <NamedIndividual IRI="#corVermelho"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubos"/>
+        <NamedIndividual IRI="#cuboA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Suporte"/>
+        <NamedIndividual IRI="#cuboA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubos"/>
+        <NamedIndividual IRI="#cuboB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubos"/>
+        <NamedIndividual IRI="#cuboC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Suporte"/>
+        <NamedIndividual IRI="#cuboC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CorCinza"/>
+        <NamedIndividual IRI="#cuboCinza1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubos"/>
+        <NamedIndividual IRI="#cuboCinza1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CorCinza"/>
+        <NamedIndividual IRI="#cuboCinza2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubos"/>
+        <NamedIndividual IRI="#cuboCinza2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubos"/>
+        <NamedIndividual IRI="#cuboD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubos"/>
+        <NamedIndividual IRI="#cuboE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mesa"/>
+        <NamedIndividual IRI="#mesa1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mesa"/>
+        <NamedIndividual IRI="#mesa2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MassaOito"/>
+        <NamedIndividual IRI="#8kg"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#cuboA"/>
+        <NamedIndividual IRI="#mesa1"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#cuboB"/>
+        <NamedIndividual IRI="#mesa1"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#cuboC"/>
+        <NamedIndividual IRI="#mesa1"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaSobre"/>
+        <NamedIndividual IRI="#cuboA"/>
+        <NamedIndividual IRI="#mesa1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temCor"/>
+        <NamedIndividual IRI="#cuboA"/>
+        <NamedIndividual IRI="#corLaranja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temMassa"/>
+        <NamedIndividual IRI="#cuboA"/>
+        <NamedIndividual IRI="#8kg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaSobre"/>
+        <NamedIndividual IRI="#cuboB"/>
+        <NamedIndividual IRI="#cuboA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temCor"/>
+        <NamedIndividual IRI="#cuboB"/>
+        <NamedIndividual IRI="#corAzul"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temMassa"/>
+        <NamedIndividual IRI="#cuboB"/>
+        <NamedIndividual IRI="#8kg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaSobre"/>
+        <NamedIndividual IRI="#cuboC"/>
+        <NamedIndividual IRI="#mesa1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temCor"/>
+        <NamedIndividual IRI="#cuboC"/>
+        <NamedIndividual IRI="#corLaranja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temCor"/>
+        <NamedIndividual IRI="#cuboCinza1"/>
+        <NamedIndividual IRI="#corCinza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temCor"/>
+        <NamedIndividual IRI="#cuboCinza2"/>
+        <NamedIndividual IRI="#corCinza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaSobre"/>
+        <NamedIndividual IRI="#cuboD"/>
+        <NamedIndividual IRI="#cuboC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temCor"/>
+        <NamedIndividual IRI="#cuboD"/>
+        <NamedIndividual IRI="#corCinza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaSobre"/>
+        <NamedIndividual IRI="#cuboE"/>
+        <NamedIndividual IRI="#cuboE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temCor"/>
+        <NamedIndividual IRI="#cuboE"/>
+        <NamedIndividual IRI="#corVermelho"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temCor"/>
+        <NamedIndividual IRI="#mesa2"/>
+        <NamedIndividual IRI="#corCinza"/>
+    </ObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaSobre"/>
+        <NamedIndividual IRI="#cuboA"/>
+        <NamedIndividual IRI="#cuboA"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaSobre"/>
+        <NamedIndividual IRI="#cuboB"/>
+        <NamedIndividual IRI="#cuboB"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaSobre"/>
+        <NamedIndividual IRI="#cuboC"/>
+        <NamedIndividual IRI="#cuboC"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaSobre"/>
+        <NamedIndividual IRI="#cuboD"/>
+        <NamedIndividual IRI="#cuboD"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaSobre"/>
+        <NamedIndividual IRI="#cuboE"/>
+        <NamedIndividual IRI="#cuboE"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaSobre"/>
+        <NamedIndividual IRI="#mesa1"/>
+        <NamedIndividual IRI="#mesa1"/>
+    </NegativeObjectPropertyAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cor</IRI>
+        <Literal xml:lang="pt-br">a classe cor contém cores nas quais devo usar para setar cores para objetos do mundo dos cubos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cuboA</IRI>
+        <Literal xml:lang="pt-br">o cubo A representa um dos cubos existentes entre os cubos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cuboB</IRI>
+        <Literal xml:lang="pt-br">o cubo B representa um dos cubos existentes entre os cubos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cuboC</IRI>
+        <Literal>o cubo C representa um dos cubos existentes entre os cubos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#mesa1</IRI>
+        <Literal xml:lang="pt-br">a mesa representa a mesa do mundo dos cubos e contém uma relacao com os cubos</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
