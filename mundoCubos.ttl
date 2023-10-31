@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto/"
+     xml:base="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:MundoDosCubosOnto="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto"/>
+        <rdfs:comment xml:lang="pt-br">Ontologia que descreve o mundo dos Cubos</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#estaSobre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#estaSobre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#temCor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#temCor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#temMassa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#temMassa"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Cor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Cor">
+        <rdfs:comment xml:lang="pt-br">a classe cor contém cores nas quais devo usar para setar cores para objetos do mundo dos cubos</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#CorCinza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#CorCinza">
+        <rdfs:comment>Uma classe para instanciar objetos da cor cinza</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Cubos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Cubos">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Mesa"/>
+        <rdfs:comment>Classe dos obketos do tipo cubo</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#MassaOito -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#MassaOito">
+        <rdfs:comment>Classe para obketos com massa igual a 8kg</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Mesa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Mesa">
+        <rdfs:comment>Classe para objetos do tipo mesa</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Suporte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Suporte">
+        <rdfs:comment>Classe para instanciar objetos que servem de suporte para outros objetos</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#azul -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#azul">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Cor"/>
+        <rdfs:comment>representa a cor Azul</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cinza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cinza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Cor"/>
+        <rdfs:comment>representa a cor cinza</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#laranja -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#laranja">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Cor"/>
+        <rdfs:comment>representa a cor laranja</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#vermelho -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#vermelho">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Cor"/>
+        <rdfs:comment>representa a cor laranja</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#corAzul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#corAzul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#azul"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#corCinza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#corCinza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cinza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#corLaranja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#corLaranja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#laranja"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#corVermelho -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#corVermelho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#vermelho"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Cubos"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Suporte"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#mesa1"/>
+        <MundoDosCubosOnto:estaSobre rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#mesa1"/>
+        <MundoDosCubosOnto:temCor rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#corLaranja"/>
+        <MundoDosCubosOnto:temMassa rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#8kg"/>
+        <rdfs:comment xml:lang="pt-br">o cubo A representa um dos cubos existentes entre os cubos</rdfs:comment>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboA"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#estaSobre"/>
+        <owl:targetIndividual rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboA"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Cubos"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#mesa1"/>
+        <MundoDosCubosOnto:estaSobre rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboA"/>
+        <MundoDosCubosOnto:temCor rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#corAzul"/>
+        <MundoDosCubosOnto:temMassa rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#8kg"/>
+        <rdfs:comment xml:lang="pt-br">o cubo B representa um dos cubos existentes entre os cubos</rdfs:comment>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboB"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#estaSobre"/>
+        <owl:targetIndividual rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboB"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Cubos"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Suporte"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#mesa1"/>
+        <MundoDosCubosOnto:estaSobre rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#mesa1"/>
+        <MundoDosCubosOnto:temCor rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#corLaranja"/>
+        <rdfs:comment>o cubo C representa um dos cubos existentes entre os cubos</rdfs:comment>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboC"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#estaSobre"/>
+        <owl:targetIndividual rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboC"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboCinza1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboCinza1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#CorCinza"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Cubos"/>
+        <MundoDosCubosOnto:temCor rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#corCinza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboCinza2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboCinza2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#CorCinza"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Cubos"/>
+        <MundoDosCubosOnto:temCor rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#corCinza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Cubos"/>
+        <MundoDosCubosOnto:estaSobre rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboC"/>
+        <MundoDosCubosOnto:temCor rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#corCinza"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboD"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#estaSobre"/>
+        <owl:targetIndividual rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboD"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Cubos"/>
+        <MundoDosCubosOnto:estaSobre rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboE"/>
+        <MundoDosCubosOnto:temCor rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#corVermelho"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboE"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#estaSobre"/>
+        <owl:targetIndividual rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#cuboE"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#mesa1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#mesa1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Mesa"/>
+        <rdfs:comment xml:lang="pt-br">a mesa representa a mesa do mundo dos cubos e contém uma relacao com os cubos</rdfs:comment>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#mesa1"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#estaSobre"/>
+        <owl:targetIndividual rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#mesa1"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#mesa2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#mesa2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#Mesa"/>
+        <MundoDosCubosOnto:temCor rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#corCinza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#8kg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#8kg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/derli.machado/ontologies/2023/9/MundoDosCubosOnto#MassaOito"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
